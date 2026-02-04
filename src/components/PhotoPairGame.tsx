@@ -3,9 +3,8 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
-// import { IMAGES_18 as images } from "@/data/images";
 
-export const images = [
+const images = [
   "/img/game/1.avif",
   "/img/game/2.avif",
   "/img/game/3.avif",

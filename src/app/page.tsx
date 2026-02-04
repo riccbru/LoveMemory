@@ -25,8 +25,8 @@ export default function Home() {
       {!showValentinesProposal ? (
         <motion.div
           initial={{ opacity: 1 }}
-          animate={{ opacity: isTransitioning ? 0 : 1 }}
           transition={{ duration: ANIM_DURATION }}
+          animate={{ opacity: isTransitioning ? 0 : 1 }}
         >
           <PhotoPairGame handleShowProposal={handleShowProposal} />
           <TextFooter />

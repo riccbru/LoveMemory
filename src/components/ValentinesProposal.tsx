@@ -2,10 +2,9 @@ import Image from "next/image";
 import Fireworks from "@fireworks-js/react";
 import { useState, useEffect } from "react";
 import { Playfair_Display } from "next/font/google";
-// import { IMAGES_36 as images } from "@/data/images";
 import { motion, AnimatePresence } from "framer-motion";
 
-export const images = [
+const images = [
   "/img/game/1.avif",
   "/img/game/2.avif",
   "/img/game/3.avif",
@@ -91,7 +90,7 @@ export default function ValentinesProposal() {
             transition={{ duration: 1 }}
             className={`text-4xl font-semibold mb-4 ${playfairDisplay.className}`}
           >
-            Bravissima amore! Allora ti ricordi del mio amore 😍
+            Bravissima amore! Allora ti ricordi di noi 😍
           </motion.h2>
         )}
         {step === 1 && (
