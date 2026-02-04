@@ -3,7 +3,28 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
-import { IMAGES_18 as images } from "@/data/images";
+// import { IMAGES_18 as images } from "@/data/images";
+
+export const images = [
+  "/img/game/1.avif",
+  "/img/game/2.avif",
+  "/img/game/3.avif",
+  "/img/game/4.avif",
+  "/img/game/5.avif",
+  "/img/game/6.avif",
+  "/img/game/7.avif",
+  "/img/game/8.avif",
+  "/img/game/9.avif",
+  "/img/game/10.avif",
+  "/img/game/11.avif",
+  "/img/game/12.avif",
+  "/img/game/13.avif",
+  "/img/game/14.avif",
+  "/img/game/15.avif",
+  "/img/game/16.avif",
+  "/img/game/17.avif",
+  "/img/game/18.avif"
+]
 
 // Create 18 pairs of images (36 images in total)
 const imagePairs = images.flatMap((image) => [image, image]);
