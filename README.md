@@ -4,7 +4,7 @@ A romantic and interactive way to ask your special someone to be your Valentine!
 
 ## Demo 🎮
 
-A live demo of the game available [here](https://love-memory.vercel.app).
+A live demo of the game available [here](https://love-memory-rgv.vercel.app).
 
 ## Features ✨
 
