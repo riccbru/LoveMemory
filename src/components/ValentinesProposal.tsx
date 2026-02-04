@@ -2,7 +2,7 @@ import Image from "next/image";
 import Fireworks from "@fireworks-js/react";
 import { useState, useEffect } from "react";
 import { Playfair_Display } from "next/font/google";
-import { IMAGES_18 as images } from "@/data/images";
+import { IMAGES_36 as images } from "@/data/images";
 import { motion, AnimatePresence } from "framer-motion";
 
 const playfairDisplay = Playfair_Display({
@@ -98,8 +98,8 @@ export default function ValentinesProposal() {
             <Image
               width={200}
               height={200}
-              alt="Sad Hamster"
-              src="/img/sad_hamster.png"
+              alt="Sad Narcy"
+              src="/img/sad_narcy.png"
             />
             <div className="flex space-x-4 mt-10">
               <button
