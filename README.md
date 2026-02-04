@@ -33,7 +33,7 @@ npm install
 ```
 
 3. Replace the photos:
-   - Navigate to the `public/game-photos` directory
+   - Navigate to the `public/img/game` directory
    - Populate with 36 numbered AVIF images (best result: use square images of the same size)
 
 4. Start the development server:
@@ -46,7 +46,7 @@ npm run dev
 ## Customization 🎨
 
 ### Changing Photos
-- Add your photos to `public/game-photos/`
+- Add your photos to `public/img/game`
 - Name them from 1.avif to 36.avif
 - For best results, use square images of the same size
 - Convert your images to .avif format for better performance
