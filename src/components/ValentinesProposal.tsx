@@ -90,7 +90,7 @@ export default function ValentinesProposal() {
             transition={{ duration: 1 }}
             className={`text-4xl font-semibold mb-4 ${playfairDisplay.className}`}
           >
-            Bravissima amore! Allora ti ricordi di noi 😍
+            Bravissima amore! <br></br> Allora ti ricordi di noi 😍
           </motion.h2>
         )}
         {step === 1 && (
@@ -102,7 +102,7 @@ export default function ValentinesProposal() {
             transition={{ duration: 3 }}
             className={`text-4xl font-semibold mb-4 ${playfairDisplay.className}`}
           >
-            Ho una sorpresa per te!
+            Prima però una piccola domanda...
           </motion.h2>
         )}
         {step === 2 && (
@@ -173,8 +173,8 @@ export default function ValentinesProposal() {
             transition={{ duration: 1 }}
             className={`text-4xl font-semibold mb-4 flex flex-col justify-center items-center ${playfairDisplay.className}`}
           >
-            Grazieee! Sei il mio amore
-            <p className="text-sm mt-4">Ora chiamami 💌</p>
+            Grazieee! <br></br>Sei il mio amore
+            <p className="text-sm mt-4">Ti sei meritata una sorpresa 💌</p>
             <Image
               width={200}
               unoptimized
