@@ -1,19 +1,10 @@
-import type { Metadata } from "next";
 import "./globals.css";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Valentines: A Romantic Card Game with a Surprise Proposal",
+  title: "Fatto con amore per RGV",
   description:
-    "Play a unique Valentine's card game. Complete the collection to reveal a romantic proposal!",
-  keywords: [
-    "Valentine's card game",
-    "romantic proposal game",
-    "photo card challenge",
-    "Valentine's Day surprise",
-    "couples game",
-    "valentine's day game",
-    "proposal game",
-  ],
+    "Completa il gioco e vedi che succede",
 };
 
 export default function RootLayout({

@@ -1,17 +1,38 @@
 "use client";
 
-import { useState } from "react";
 import { motion } from "framer-motion";
-
+import { useState, useEffect } from "react";
 import TextFooter from "@/components/TextFooter";
 import PhotoPairGame from "../components/PhotoPairGame";
 import ValentinesProposal from "@/components/ValentinesProposal";
+import RomanticSpinner from "@/components/RomanticSpinner";
 
 const ANIM_DURATION = 2;
+const LOADING_DELAY = 1750;
 
 export default function Home() {
-  const [showValentinesProposal, setShowValentinesProposal] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const [showValentinesProposal, setShowValentinesProposal] = useState(false);
+
+  useEffect(() => {
+    const checkDevice = () => {
+      const width = window.innerWidth;
+      const userAgent = navigator.userAgent.toLowerCase();
+      const isMobileDevice = /mobile|tablet|ipad|iphone|android/.test(userAgent);
+      setIsMobile(width < 1024 || isMobileDevice);
+    };
+
+    checkDevice();
+
+    // Show spinner for at least LOADING_DELAY ms
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, LOADING_DELAY);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   const handleShowProposal = () => {
     setIsTransitioning(true);
@@ -19,6 +40,26 @@ export default function Home() {
       setShowValentinesProposal(true);
     }, ANIM_DURATION * 1000);
   };
+
+  // Show romantic spinner while loading
+  if (isLoading) {
+    return <RomanticSpinner />;
+  }
+
+  // Show message for mobile users
+  if (isMobile) {
+    return (
+      <div className="flex items-center justify-center min-h-screen bg-black px-6">
+        <div className="text-center text-white">
+          <p className="text-lg">
+            Ti avevo detto di aprirlo da PC, Rosse&apos;...
+            <br></br>
+
+          </p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-black relative px-10">
