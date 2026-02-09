@@ -2,9 +2,8 @@ import "./globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Fatto con amore per RGV",
-  description:
-    "Completa il gioco e vedi che succede",
+  title: "To RGV with Love",
+  description: "",
 };
 
 export default function RootLayout({
