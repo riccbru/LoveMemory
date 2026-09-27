@@ -32,8 +32,10 @@ Love Memory is an interactive memory game featuring a unique geometric heart-sha
 
 ## Customization 🎨
 ### Photos
-- Number photos from 1 to 36 
-- Move photos **in AVIF format** in [`/public/img/game`](./public/img/game/)
+- Load at least 18 photos
+- Convert in **in AVIF format**
+- Name them with numbers (`1.avif`, `2.avif`, etc.)
+- Move photos in [`public/img/game`](./public/img/game/)
 - Edit photos configuration in [`src/data/images.ts`](./src/data/images.ts)
 ### Text
 - Duplicate env file:
@@ -42,8 +44,9 @@ Love Memory is an interactive memory game featuring a unique geometric heart-sha
   ```
   |Name|Value|
   |-|-|
-  | NEXT_PUBLIC_PARTNER_NAME | LoveMemory's recipient |
-  | NEXT_PUBLIC_ANIM_DURATION | Duration of paired images (s) |
-  | NEXT_PUBLIC_LOADING_DELAY | Initial screen loading delay (ms) |
-- Change game instructions in [components/TextFooter.tsx](./src/components/TextFooter.tsx)
-- Edit proposal messages in [components/ValentinesProposal.tsx](./src/components/ValentinesProposal.tsx)
+  | `NEXT_PUBLIC_ANIM_DURATION` | Duration of paired images (s) |
+  | `NEXT_PUBLIC_LOADING_DELAY` | Initial screen loading delay (ms) |
+  | `NEXT_PUBLIC_PARTNER_NAME` | LoveMemory's recipient |
+  | `NEXT_PUBLIC_FIXED_PHOTOS` | List of non-random photos (≤ 18) |
+- Change game instructions in [src/components/TextFooter.tsx](./src/components/TextFooter.tsx)
+- Edit proposal messages in [src/components/ValentinesProposal.tsx](./src/components/ValentinesProposal.tsx)

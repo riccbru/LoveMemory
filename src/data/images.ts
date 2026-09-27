@@ -1,7 +1,12 @@
 // Total number of unique photos in the game (pairs will be created from these)
 export const TOTAL_PHOTOS = 18;
 
-const fixedPhotoNumbers = [1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 23, 24];
+// From env var NEXT_PUBLIC_FIXED_PHOTOS="1,2,3,4,5" (< 18)
+// to variable fixedPhotoNumbers = [1, 2, 3, 4, 5];
+const fixedPhotoNumbers: number[] = (process.env.NEXT_PUBLIC_FIXED_PHOTOS || "")
+  .split(",")
+  .map((id) => Number(id.trim()))
+  .filter((n) => !isNaN(n));
 
 // Photos that will ALWAYS appear in the game (your special memories!)
 
