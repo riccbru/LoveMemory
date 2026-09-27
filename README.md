@@ -16,27 +16,25 @@ Love Memory is an interactive memory game featuring a unique geometric heart-sha
 ## Getting Started 🚀
 
 1. Clone the repository:
-  ```bash
-  git clone https://github.com/riccbru/LoveMemory.git
-  ```
+    ```bash
+    git clone https://github.com/riccbru/LoveMemory.git
+    ```
 
 2. Install dependencies:
-  ```bash
-  cd LoveMemory; npm install
-  ```
+    ```bash
+    cd LoveMemory; npm install
+    ```
 
 3. Start the development server on [http://localhost:3000](http://localhost:3000):
-  ```bash
-  npm run dev
-  ```
+    ```bash
+    npm run dev
+    ```
 
 ## Customization 🎨
-
 ### Photos
-- Number photos from 1 to 36
-- Move photos in AVIF format in `/public/img/game`
-- Edit photos configuration in `/data/images.ts`
-
+- Number photos from 1 to 36 
+- Move photos **in AVIF format** in [`/public/img/game`](./public/img/game/)
+- Edit photos configuration in [`src/data/images.ts`](./src/data/images.ts)
 ### Text
 - Duplicate env file:
   ```bash
