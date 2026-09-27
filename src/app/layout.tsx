@@ -2,7 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "To RGV with Love",
+  title: `To ${process.env.NEXT_PUBLIC_PARTNER_NAME} with Love`,
   description: "",
 };
 

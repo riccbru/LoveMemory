@@ -7,10 +7,12 @@ import PhotoPairGame from "../components/PhotoPairGame";
 import ValentinesProposal from "@/components/ValentinesProposal";
 import RomanticSpinner from "@/components/RomanticSpinner";
 
-const ANIM_DURATION = 2;
-const LOADING_DELAY = 1750;
+const PARTNER_NAME = process.env.PARTNER_NAME;
+const ANIM_DURATION = Number(process.env.NEXT_PUBLIC_ANIM_DURATION);
+const LOADING_DELAY = Number(process.env.NEXT_PUBLIC_LOADING_DELAY);
 
 export default function Home() {
+
   const [isMobile, setIsMobile] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [isTransitioning, setIsTransitioning] = useState(false);
@@ -52,7 +54,7 @@ export default function Home() {
       <div className="flex items-center justify-center min-h-screen bg-black px-6">
         <div className="text-center text-white">
           <p className="text-lg">
-            Ti avevo detto di aprirlo da PC, Rosse&apos;...
+            Ti avevo detto di aprirlo da PC, ${PARTNER_NAME}...
             <br></br>
 
           </p>
