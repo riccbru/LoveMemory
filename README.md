@@ -16,19 +16,19 @@ Love Memory is an interactive memory game featuring a unique geometric heart-sha
 ## Getting Started 🚀
 
 1. Clone the repository:
-```bash
-git clone https://github.com/riccbru/LoveMemory.git
-```
+  ```bash
+  git clone https://github.com/riccbru/LoveMemory.git
+  ```
 
 2. Install dependencies:
-```bash
-cd LoveMemory; npm install
-```
+  ```bash
+  cd LoveMemory; npm install
+  ```
 
 3. Start the development server on [http://localhost:3000](http://localhost:3000):
-```bash
-npm run dev
-```
+  ```bash
+  npm run dev
+  ```
 
 ## Customization 🎨
 
@@ -38,5 +38,14 @@ npm run dev
 - Edit photos configuration in `/data/images.ts`
 
 ### Text
-- Change game instructions in `components/TextFooter.tsx`
-- Edit proposal messages in `components/ValentinesProposal.tsx`
+- Duplicate env file:
+  ```bash
+  cp .env.example .env
+  ```
+  |Name|Value|
+  |-|-|
+  | NEXT_PUBLIC_PARTNER_NAME | LoveMemory's recipient |
+  | NEXT_PUBLIC_ANIM_DURATION | Duration of paired images (s) |
+  | NEXT_PUBLIC_LOADING_DELAY | Initial screen loading delay (ms) |
+- Change game instructions in [components/TextFooter.tsx](./src/components/TextFooter.tsx)
+- Edit proposal messages in [components/ValentinesProposal.tsx](./src/components/ValentinesProposal.tsx)
